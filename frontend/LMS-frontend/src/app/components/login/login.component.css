@@ -7,8 +7,13 @@
     border-radius: 20px;
     width: 55%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
 
 
+}
+.form-control{
+    margin-bottom: 10px;
 }
 
 .login{
