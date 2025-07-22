@@ -73,11 +73,11 @@
 
 
 .b1:hover{
-    transition: 1s ;
+    transition: 0.5s ;
     background-color: black;
     color: white;
     transform: scale(1.1);
-    transform: rotatex(1);
+    transform: rotateX(360deg);
 }
 
 

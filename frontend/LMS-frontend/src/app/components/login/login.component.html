@@ -1,11 +1,11 @@
 <div class="body">
   <h1>Login</h1>
   <div class="login">
-    <form class="form">
-      <input class="form-control" type="text" placeholder="username" />
-      <input class="form-control" type="text" placeholder="password" />
+    <form class="form" name="form">
+      <input class="form-control" type="text" placeholder="username" name = "username"[(ngModel)] = "username"/>
+      <input class="form-control" type="text" placeholder="password" name = "password"[(ngModel)] = "password"/>
       <div class="buttons form-control">
-        <button class="b1">Login</button>
+        <button class="b1" (click)="onlogin()">Login</button>
         <button class="b1">sign up</button>
       </div>
     </form>
