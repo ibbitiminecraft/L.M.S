@@ -18,11 +18,11 @@ namespace libary.classes
 
 
 
-        public bool Iscorrect(string username, string password)
+        public static bool Iscorrect(string username, string password)
         {
             foreach (var user in _userlist)
             {
-                if (username == Username && password == Password)
+                if (username == user.Username && password == user.Password)
                 {
                     return true;
                 }

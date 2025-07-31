@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Dto;
+using libary.classes;
+
 
 namespace API.Controllers
 {
@@ -10,9 +12,16 @@ namespace API.Controllers
     {
 
         [HttpPost("Login")]
-        public Task<IActionResult> tryloginuser(LoginDto LoginDto)
+        public IActionResult tryloginuser(LoginDto loginDto)
         {
-           
+            if (libary.classes.User.Iscorrect(loginDto.Username, loginDto.Password))
+            {
+                return Ok();
+            }
+            else
+            {
+                return Unauthorized();
+            }
         }
 
 
